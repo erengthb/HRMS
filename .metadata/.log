@@ -1,0 +1,599 @@
+!SESSION 2022-05-26 18:32:30.416 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=tr_TR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.ui 2 0 2022-05-26 18:37:32.250
+!MESSAGE Warnings while parsing the images from the 'org.eclipse.ui.commandImages' extension point.
+!SUBENTRY 1 org.eclipse.ui 2 0 2022-05-26 18:37:32.250
+!MESSAGE Cannot bind to an undefined command: plug-in='com.genuitec.eclipse.theming.ui', id='com.genuitec.myeclipse.help.darktheme.commandid'
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2022-05-26 18:37:33.211
+!MESSAGE A DevStyle Theme is being activated on this workspace; preparing colors and configuration
+
+!ENTRY com.genuitec.eclipse.theming.ui 1 0 2022-05-26 18:37:33.237
+!MESSAGE DevStyle has archived current color configurations to alternate preferences - will be restored when switching out of the DevStyle Theme
+
+!ENTRY org.eclipse.jface 2 0 2022-05-26 18:37:35.158
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-26 18:37:35.158
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4dd4a4e,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7e3ccedb,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-26 18:37:35.158
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@7469d13a,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@2471cfa0,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-26 18:37:41.693
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-26 18:37:41.693
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-26 18:37:41.753
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\erend'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-26 18:37:42.159
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-26 18:37:44.913
+!MESSAGE No profile found: default
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-26 18:37:44.957
+!MESSAGE Monitoring content of C:\Users\erend\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-26 18:37:45.844
+!MESSAGE AWS toolkit core plugin initialized after 3686 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-26 18:37:45.859
+!MESSAGE The current accountId is not found in the system. Switching to the default account.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-26 18:37:46.671
+!MESSAGE Initialized a new Cognito identity us-east-1:3ea2f766-ae40-43aa-9604-43a059e7eb61
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-26 18:39:46.105
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:150)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-26 18:39:46.617
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-26 18:41:40.950
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:425)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:260)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.ui 4 0 2022-05-26 18:41:41.091
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4907)
+	at org.eclipse.swt.SWT.error(SWT.java:4822)
+	at org.eclipse.swt.SWT.error(SWT.java:4793)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:445)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:364)
+	at org.eclipse.swt.widgets.Tree.getItems(Tree.java:3330)
+	at org.eclipse.jface.viewers.TreeViewer.getChildren(TreeViewer.java:163)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.internalCollectExpandedItems(AbstractTreeViewer.java:1646)
+	at org.eclipse.jface.viewers.AbstractTreeViewer.getExpandedTreePaths(AbstractTreeViewer.java:3045)
+	at org.eclipse.lsp4e.outline.LSSymbolsContentProvider.lambda$2(LSSymbolsContentProvider.java:307)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:185)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4035)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3635)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-26 18:51:24.361
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverRegion(LSPTextHover.java:150)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverRegion(CompositeTextHover.java:101)
+	at org.eclipse.jface.text.TextViewerHoverManager.computeInformation(TextViewerHoverManager.java:128)
+	at org.eclipse.jface.text.AbstractInformationControlManager.doShowInformation(AbstractInformationControlManager.java:1101)
+	at org.eclipse.jface.text.AbstractHoverInformationControlManager$MouseTracker.mouseHover(AbstractHoverInformationControlManager.java:511)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:212)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4243)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1060)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4060)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3632)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1154)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1045)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:644)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:338)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:551)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:156)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:401)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:659)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:596)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1467)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-26 18:51:24.864
+!MESSAGE TimeoutException
+!STACK 0
+java.util.concurrent.TimeoutException
+	at java.base/java.util.concurrent.CompletableFuture.timedGet(CompletableFuture.java:1960)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2095)
+	at org.eclipse.lsp4e.operations.hover.LSPTextHover.getHoverInfo(LSPTextHover.java:73)
+	at org.eclipse.ui.internal.genericeditor.hover.CompositeTextHover.getHoverInfo2(CompositeTextHover.java:60)
+	at org.eclipse.jface.text.TextViewerHoverManager$1.run(TextViewerHoverManager.java:155)
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-05-27 00:36:45.013
+!MESSAGE An internal error occurred during: "Git Repository Change Scanner".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:354)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:56)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getPackedRefs(RefDirectory.java:877)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getRefs(RefDirectory.java:335)
+	at org.eclipse.jgit.lib.RefDatabase.getRefsByPrefix(RefDatabase.java:401)
+	at org.eclipse.jgit.lib.RefDatabase.getRefs(RefDatabase.java:361)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.scanForRepoChanges(FileRepository.java:483)
+	at org.eclipse.egit.core.RepositoryHandle.scanForRepoChanges(RepositoryHandle.java:339)
+	at org.eclipse.egit.ui.internal.ExternalRepositoryScanner$RepositoryChangeScanner.run(ExternalRepositoryScanner.java:281)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:186)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:395)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.internal.EclipseSystemReader.getUserConfig(EclipseSystemReader.java:106)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:349)
+	... 10 more
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Invalid line in config file
+	at org.eclipse.jgit.lib.Config.fromTextRecurse(Config.java:1158)
+	at org.eclipse.jgit.lib.Config.fromText(Config.java:1086)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:144)
+	... 14 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-05-27 00:37:02.862
+!MESSAGE An internal error occurred during: "Git Repository Change Scanner".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:354)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:56)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getPackedRefs(RefDirectory.java:877)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getRefs(RefDirectory.java:335)
+	at org.eclipse.jgit.lib.RefDatabase.getRefsByPrefix(RefDatabase.java:401)
+	at org.eclipse.jgit.lib.RefDatabase.getRefs(RefDatabase.java:361)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.scanForRepoChanges(FileRepository.java:483)
+	at org.eclipse.egit.core.RepositoryHandle.scanForRepoChanges(RepositoryHandle.java:339)
+	at org.eclipse.egit.ui.internal.ExternalRepositoryScanner$RepositoryChangeScanner.run(ExternalRepositoryScanner.java:281)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:186)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:395)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.internal.EclipseSystemReader.getUserConfig(EclipseSystemReader.java:106)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:349)
+	... 10 more
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Invalid line in config file
+	at org.eclipse.jgit.lib.Config.fromTextRecurse(Config.java:1158)
+	at org.eclipse.jgit.lib.Config.fromText(Config.java:1086)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:144)
+	... 14 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-05-27 00:38:59.386
+!MESSAGE An internal error occurred during: "Git Repository Change Scanner".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:354)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:56)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getPackedRefs(RefDirectory.java:877)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getRefs(RefDirectory.java:335)
+	at org.eclipse.jgit.lib.RefDatabase.getRefsByPrefix(RefDatabase.java:401)
+	at org.eclipse.jgit.lib.RefDatabase.getRefs(RefDatabase.java:361)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.scanForRepoChanges(FileRepository.java:483)
+	at org.eclipse.egit.core.RepositoryHandle.scanForRepoChanges(RepositoryHandle.java:339)
+	at org.eclipse.egit.ui.internal.ExternalRepositoryScanner$RepositoryChangeScanner.run(ExternalRepositoryScanner.java:281)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:186)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:395)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.internal.EclipseSystemReader.getUserConfig(EclipseSystemReader.java:106)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:349)
+	... 10 more
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Invalid line in config file
+	at org.eclipse.jgit.lib.Config.fromTextRecurse(Config.java:1158)
+	at org.eclipse.jgit.lib.Config.fromText(Config.java:1086)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:144)
+	... 14 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-05-27 00:40:10.620
+!MESSAGE An internal error occurred during: "Git Repository Change Scanner".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:354)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:56)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getPackedRefs(RefDirectory.java:877)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getRefs(RefDirectory.java:335)
+	at org.eclipse.jgit.lib.RefDatabase.getRefsByPrefix(RefDatabase.java:401)
+	at org.eclipse.jgit.lib.RefDatabase.getRefs(RefDatabase.java:361)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.scanForRepoChanges(FileRepository.java:483)
+	at org.eclipse.egit.core.RepositoryHandle.scanForRepoChanges(RepositoryHandle.java:339)
+	at org.eclipse.egit.ui.internal.ExternalRepositoryScanner$RepositoryChangeScanner.run(ExternalRepositoryScanner.java:281)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:186)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:395)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.internal.EclipseSystemReader.getUserConfig(EclipseSystemReader.java:106)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:349)
+	... 10 more
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Invalid line in config file
+	at org.eclipse.jgit.lib.Config.fromTextRecurse(Config.java:1158)
+	at org.eclipse.jgit.lib.Config.fromText(Config.java:1086)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:144)
+	... 14 more
+
+!ENTRY org.eclipse.core.jobs 4 2 2022-05-27 00:41:32.235
+!MESSAGE An internal error occurred during: "Git Repository Change Scanner".
+!STACK 0
+java.lang.RuntimeException: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:354)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:56)
+	at org.eclipse.egit.core.CachingRepository.getConfig(CachingRepository.java:1)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getPackedRefs(RefDirectory.java:877)
+	at org.eclipse.jgit.internal.storage.file.RefDirectory.getRefs(RefDirectory.java:335)
+	at org.eclipse.jgit.lib.RefDatabase.getRefsByPrefix(RefDatabase.java:401)
+	at org.eclipse.jgit.lib.RefDatabase.getRefs(RefDatabase.java:361)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.scanForRepoChanges(FileRepository.java:483)
+	at org.eclipse.egit.core.RepositoryHandle.scanForRepoChanges(RepositoryHandle.java:339)
+	at org.eclipse.egit.ui.internal.ExternalRepositoryScanner$RepositoryChangeScanner.run(ExternalRepositoryScanner.java:281)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:186)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:395)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.internal.EclipseSystemReader.getUserConfig(EclipseSystemReader.java:106)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.getConfig(FileRepository.java:349)
+	... 10 more
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Invalid line in config file
+	at org.eclipse.jgit.lib.Config.fromTextRecurse(Config.java:1158)
+	at org.eclipse.jgit.lib.Config.fromText(Config.java:1086)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:144)
+	... 14 more
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-05-27 00:41:44.110
+!MESSAGE org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+!STACK 0
+java.util.concurrent.ExecutionException: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:396)
+	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2096)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$13(LanguageServerWrapper.java:425)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.run(CompletableFuture.java:1804)
+	at java.base/java.util.concurrent.CompletableFuture$AsyncRun.exec(CompletableFuture.java:1796)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+Caused by: org.eclipse.lsp4j.jsonrpc.ResponseErrorException: Internal error.
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleResponse(RemoteEndpoint.java:209)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:193)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$4(LanguageServerWrapper.java:260)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:194)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:94)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:113)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.ui.ide 4 4 2022-05-27 00:41:50.556
+!MESSAGE Problems saving workspace
+
+!ENTRY org.eclipse.ui.ide 2 1 2022-05-27 00:41:50.556
+!MESSAGE Problems occurred while trying to save the state of the workbench.
+!SUBENTRY 1 org.eclipse.core.resources 2 234 2022-05-27 00:41:50.556
+!MESSAGE The project description file (.project) for 'hrms' was missing.  This file contains important information about the project.  A new project description file has been created, but some information about the project may have been lost.
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-05-27 00:41:52.574
+!MESSAGE The workspace will exit with unsaved changes in this session.
+!SESSION 2022-05-27 00:41:53.612 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=tr_TR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2022-05-27 00:42:05.541
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.jface 2 0 2022-05-27 00:42:09.711
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-27 00:42:09.711
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@70916715,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@72d4d9ac,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-05-27 00:42:09.711
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@76b06e50,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1d0ac379,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-27 00:42:16.688
+!MESSAGE Starting the AWS toolkit core plugin...
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-27 00:42:17.421
+!MESSAGE Monitoring content of C:\Users\erend\.aws\credentials
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-27 00:42:17.975
+!MESSAGE AWS toolkit core plugin initialized after 1287 milliseconds.
+
+!ENTRY com.amazonaws.eclipse.core 1 0 2022-05-27 00:42:18.207
+!MESSAGE Found valid identity id cache us-east-1:3ea2f766-ae40-43aa-9604-43a059e7eb61
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-27 00:42:19.144
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-05-27 00:42:19.144
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-05-27 00:42:19.223
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\erend'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.core 4 0 2022-05-27 00:42:19.445
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '../.git', absolute path: 'C:/Users/erend/Desktop/JAVAKAMP/HRMS/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:751)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:714)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:678)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:661)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
+	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:335)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
+	at org.eclipse.egit.core.internal.start.WorkspaceConnector$IgnoreDerivedResources$1.visit(WorkspaceConnector.java:452)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:67)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:77)
+	at org.eclipse.core.internal.events.ResourceDelta.accept(ResourceDelta.java:51)
+	at org.eclipse.egit.core.internal.start.WorkspaceConnector$IgnoreDerivedResources.resourceChanged(WorkspaceConnector.java:435)
+	at org.eclipse.core.internal.events.NotificationManager$1.run(NotificationManager.java:305)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:295)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:158)
+	at org.eclipse.core.internal.resources.Workspace.broadcastPostChange(Workspace.java:381)
+	at org.eclipse.core.internal.resources.Workspace.endOperation(Workspace.java:1503)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:49)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-05-27 00:42:21.392
+!MESSAGE Exception caught during execution of command '[C:\Program Files\Git\cmd\git.exe, --version]' in 'C:\Program Files\Git\cmd', return code '128', error message 'fatal: bad config line 1 in file C:/Users/erend/.gitconfig
+'
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2022-05-27 00:42:21.400
+!MESSAGE Cannot read file C:\Users\erend\.gitconfig
+!STACK 0
+org.eclipse.jgit.errors.ConfigInvalidException: Cannot read file C:\Users\erend\.gitconfig
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:186)
+	at org.eclipse.jgit.util.SystemReader.updateAll(SystemReader.java:395)
+	at org.eclipse.jgit.util.SystemReader.getUserConfig(SystemReader.java:321)
+	at org.eclipse.egit.core.internal.EclipseSystemReader.getUserConfig(EclipseSystemReader.java:106)
+	at org.eclipse.jgit.internal.storage.file.FileRepository.<init>(FileRepository.java:161)
+	at org.eclipse.egit.core.CachingRepository.<init>(CachingRepository.java:40)
+	at org.eclipse.egit.core.RepositoryCache$Builder.createRepository(RepositoryCache.java:213)
+	at org.eclipse.egit.core.RepositoryCache.lookupRepository(RepositoryCache.java:147)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:720)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:678)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:661)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
+	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:412)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:388)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.jgit.errors.ConfigInvalidException: Invalid line in config file
+	at org.eclipse.jgit.lib.Config.fromTextRecurse(Config.java:1158)
+	at org.eclipse.jgit.lib.Config.fromText(Config.java:1086)
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:144)
+	... 27 more
+
+!ENTRY org.eclipse.egit.core 4 0 2022-05-27 00:42:21.401
+!MESSAGE Remove repository mapping of Git mapped resource for which project or mapped git repository has disappeared: 'RepositoryMapping[<empty> -> '../.git', absolute path: 'C:/Users/erend/Desktop/JAVAKAMP/Northwind/.git' ]'
+!STACK 0
+java.io.FileNotFoundException: 
+	at org.eclipse.egit.core.project.GitProjectData.logAndUnmapGoneMappedResource(GitProjectData.java:751)
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:722)
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:678)
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:661)
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:217)
+	at org.eclipse.egit.core.GitProvider.getData(GitProvider.java:108)
+	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:340)
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356)
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296)
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:708)
+	at org.eclipse.egit.core.internal.info.GitItemStateFactory.getIndexDiffDataOrNull(GitItemStateFactory.java:106)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:194)
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:172)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:250)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:412)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:388)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
