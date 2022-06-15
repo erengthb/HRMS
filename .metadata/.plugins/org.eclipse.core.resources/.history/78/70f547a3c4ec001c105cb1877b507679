@@ -1,0 +1,8 @@
+package kodlamaio.hrms.entities.concretes;
+
+public class Job {
+	private int id ;
+	private int jobTitle;
+	
+
+}
