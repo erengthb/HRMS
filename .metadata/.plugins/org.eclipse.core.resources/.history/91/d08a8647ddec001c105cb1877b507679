@@ -28,8 +28,8 @@ public class JobManager implements JobService {
 	
 	@Override
 	public List<Job> getAll() {
-		
-		return this.jobDao.findAll();
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
