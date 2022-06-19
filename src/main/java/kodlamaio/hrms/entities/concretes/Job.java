@@ -6,10 +6,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Data;
 
 
-@Data //Lombok
+
+ 
 
 @Entity  // Entity Annotasyonu (Java sınıflarını veritabanı tablolarına eşleştirmek için kullanılır)
 
@@ -17,7 +17,7 @@ import lombok.Data;
 
 public class Job {
 	
-	public Job(int id, int jobTitle) {
+	public Job(int id, String jobTitle) {
 		super();
 		this.id = id;
 		this.jobTitle = jobTitle;
@@ -34,7 +34,7 @@ public class Job {
 	
 	
 	@Column (name = "title") 
-	private int jobTitle;
+	private String jobTitle;
 	
 
 }
