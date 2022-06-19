@@ -290,6 +290,7 @@
             <service name="ECR" authregion="ap-southeast-3">https://api.ecr.ap-southeast-3.amazonaws.com</service>
             <service name="ECS">https://ecs.ap-southeast-3.amazonaws.com</service>
             <service name="ELB">https://elasticloadbalancing.ap-southeast-3.amazonaws.com</service>
+            <service name="ElasticBeanstalk">https://elasticbeanstalk.ap-southeast-3.amazonaws.com</service>
             <service name="IAM" authregion="us-east-1">https://iam.amazonaws.com</service>
             <service name="KMS">https://kms.ap-southeast-3.amazonaws.com</service>
             <service name="Kinesis">https://kinesis.ap-southeast-3.amazonaws.com</service>

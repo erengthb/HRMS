@@ -1,8 +1,0 @@
-package kodlamaio.hrms.business.abstracts;
-
-public class JobService {
-	
-	List<Job> getAll();
-	
-
-}
