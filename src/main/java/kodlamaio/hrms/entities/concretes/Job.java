@@ -3,6 +3,7 @@ package kodlamaio.hrms.entities.concretes;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -25,8 +26,9 @@ public class Job {
 	}
 	
 	
-	@Id  // tablodaki generated value yani id alanının nasıl olduğunu söylememiz gerekiyor
-	@GeneratedValue  //Tablodaki id alanının otomatik olarak artacağını söyler
+	@Id  // Tablodaki Id alanının nasıl oldugunu söylememiz gerekiyor
+	@GeneratedValue(strategy = GenerationType.IDENTITY)  //Tablodaki Id alanının otomatik olarak artacağını söyler
+
 	
 	
 	@Column ( name = "id") //Hangi kolona karşılık geldiğini gösterir
