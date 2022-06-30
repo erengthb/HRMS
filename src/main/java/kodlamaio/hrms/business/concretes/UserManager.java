@@ -19,7 +19,7 @@ public class UserManager implements UserService {
                              // UserDao ya erişmemiz gerek
 		
 	
-	@Autowired  // bu annotasyon projede JobDao nun instancesi olabilecek bir tane sınıfı üretip buraya veriyor
+	@Autowired  // bu annotasyon projede UserDao nun instancesi olabilecek bir tane sınıfı üretip buraya veriyor
 	
 	public UserManager(UserDao userDao) {
 		super();
@@ -29,7 +29,7 @@ public class UserManager implements UserService {
 
 	@Override
 	public List<User> getAll() {
-		// TODO Auto-generated method stub
+		
 		return this.userDao.findAll();
 	}
 

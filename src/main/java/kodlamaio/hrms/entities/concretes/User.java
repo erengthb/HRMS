@@ -25,13 +25,7 @@ public class User {
 	@Column ( name = "id")
 	private int id;
 	
-	@Column ( name = "name")
-	private String name;
 	
-	
-
-	@Column ( name = "surname")
-    private String surName;
 	
 	@Column ( name = "email")
 	private String email;

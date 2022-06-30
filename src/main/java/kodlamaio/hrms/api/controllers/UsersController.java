@@ -11,7 +11,7 @@ import kodlamaio.hrms.business.abstracts.UserService;
 import kodlamaio.hrms.entities.concretes.User;
 
 @RestController //Controller tanımlaması
-@RequestMapping("api/users")   // kodlama.io/api/jobs
+@RequestMapping("api/users")   // kodlama.io/api/users
 
 public class UsersController {
 
