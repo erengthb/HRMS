@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 
 import kodlamaio.hrms.business.abstracts.EmployeeService;
 import kodlamaio.hrms.dataAccess.abstracts.EmployeeDao;
-import kodlamaio.hrms.entities.concretes.Employees;
+import kodlamaio.hrms.entities.concretes.Employee;
 
 @Service // bu class service görevi görecek demektir.
 public class EmployeeManager implements EmployeeService {
@@ -26,7 +26,7 @@ public class EmployeeManager implements EmployeeService {
 
 
 	@Override
-	public List<Employees> getAll() {
+	public List<Employee> getAll() {
 		
 		return this.employeeDao.findAll();
 	}

@@ -12,13 +12,14 @@ import javax.persistence.Table;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Data
+
 @Entity
 @NoArgsConstructor
+@Data
 @Table(name= "employees")
 
 
-public class Employees extends User {
+public class Employee  {
 	
 	
 	@Id  // Tablodaki Id alanının nasıl oldugunu söylememiz gerekiyor
@@ -36,19 +37,13 @@ public class Employees extends User {
 	private String lastName;
 	
 	
-	public Employees(int id, String firstName, String lastName) {
+	public Employee(int id, String firstName, String lastName) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 	}
-	public Employees(int id, String firstName, String lastName,String email,String password,String tcNo ,Date date,String repeatPassword) {
-		super();
-		this.id = id;
-		this.firstName = firstName;
-		this.lastName = lastName;
-	    
-	}
+	
 	
 	
 	
