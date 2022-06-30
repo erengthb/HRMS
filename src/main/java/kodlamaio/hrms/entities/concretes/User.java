@@ -9,6 +9,9 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import lombok.Data;
+
+@Data
 @Entity
 @Table (name="users")
 public class User {
@@ -25,6 +28,8 @@ public class User {
 	@Column ( name = "name")
 	private String name;
 	
+	
+
 	@Column ( name = "surname")
     private String surName;
 	
