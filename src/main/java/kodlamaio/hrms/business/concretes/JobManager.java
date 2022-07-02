@@ -32,4 +32,6 @@ public class JobManager implements JobService {
 		return this.jobDao.findAll();
 	}
 
+	
+
 }

@@ -7,5 +7,5 @@ import kodlamaio.hrms.entities.concretes.Job;
 public interface JobService {
 	
 	List<Job> getAll();
-
+    
 }
