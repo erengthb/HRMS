@@ -1,6 +1,6 @@
 package kodlamaio.hrms.core.utilities.results;
 
-public class Result {
+public class Result {  // super type olarak geçer
 
 	private boolean succes;
 	private String message;

@@ -5,10 +5,12 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import kodlamaio.hrms.business.abstracts.JobService;
+import kodlamaio.hrms.core.utilities.results.DataResult;
 import kodlamaio.hrms.core.utilities.results.Result;
 import kodlamaio.hrms.entities.concretes.Job;
 
@@ -38,11 +40,18 @@ public class JobsController {
 	@GetMapping("/getall") // Veri istenen bir methodsa GetMapping  annotasyonu yazılır
 	// kodlama.io/api/jobs/getall isteği gelirse aşşağıdaki List çalışacak
 	
-	public List<Job> getAll() {
+	public  DataResult<List<Job>> getAll() {
 		return this.jobService.getAll();
 		
 	}
 	
+	@PostMapping("/add") // Veri gönderilen bir metotsa PostMapping annotasyonu yazılır
+	public Result add(@RequestBody Job job) {  //  @RequestBody hem istek yapıyor hem de al datan budur der.
+		// @RequestBody swagger ui daki alanları databasedeki alanlarla eşleyip veriyi onun içine gönderiyor
+		
+		return this.jobService.add(job);
+		
+	}
 	
 	
 	
