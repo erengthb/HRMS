@@ -41,8 +41,10 @@ public class JobManager implements JobService {
 	@Override
 	public Result add(Job job) {
 		
+		
+		
 		this.jobDao.save(job);
-		return new SuccessResult("Ürün Eklendi");
+		return new SuccessResult("Meslek Eklendi");
 				
 	}
 

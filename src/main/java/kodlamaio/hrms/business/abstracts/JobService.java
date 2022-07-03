@@ -10,4 +10,5 @@ public interface JobService {
 	
 	DataResult<List<Job>> getAll();
     Result add(Job job); 
+   
 }
