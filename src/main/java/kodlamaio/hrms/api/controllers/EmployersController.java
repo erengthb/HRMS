@@ -4,11 +4,15 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import kodlamaio.hrms.business.abstracts.EmployerService;
+import kodlamaio.hrms.core.utilities.results.Result;
 import kodlamaio.hrms.entities.concretes.Employer;
+import kodlamaio.hrms.entities.concretes.Job;
 
 
 @RestController   //Controller tanımlaması
@@ -34,5 +38,14 @@ public class EmployersController {
 	return this.employerService.getAll();
 	
 }
+	
+	
+	@PostMapping("/add")                               // Veri gönderilen bir metotsa PostMapping annotasyonu yazılır
+	public Result add(@RequestBody Employer employer) {  //  @RequestBody hem istek yapıyor hem de al datan budur der.
+		                                        // @RequestBody swagger ui daki alanları databasedeki alanlarla eşleyip veriyi onun içine gönderiyor
+		
+		return this.employerService.add(employer);
+		
+	}
 	
 }
