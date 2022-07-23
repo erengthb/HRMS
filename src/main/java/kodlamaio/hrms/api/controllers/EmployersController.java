@@ -13,6 +13,7 @@ import kodlamaio.hrms.business.abstracts.EmployerService;
 import kodlamaio.hrms.core.utilities.results.Result;
 import kodlamaio.hrms.entities.concretes.Employer;
 import kodlamaio.hrms.entities.concretes.Job;
+import kodlamaio.hrms.entities.concretes.User;
 
 
 @RestController   //Controller tanımlaması
@@ -41,10 +42,10 @@ public class EmployersController {
 	
 	
 	@PostMapping("/add")                               // Veri gönderilen bir metotsa PostMapping annotasyonu yazılır
-	public Result add(@RequestBody Employer employer) {  //  @RequestBody hem istek yapıyor hem de al datan budur der.
+	public Result add(@RequestBody User users) {  //  @RequestBody hem istek yapıyor hem de al datan budur der.
 		                                        // @RequestBody swagger ui daki alanları databasedeki alanlarla eşleyip veriyi onun içine gönderiyor
 		
-		return this.employerService.add(employer);
+		return this.employerService.add(users);
 		
 	}
 	

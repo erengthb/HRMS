@@ -34,7 +34,7 @@ import lombok.NoArgsConstructor;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Inheritance(strategy = InheritanceType.JOINED)
+
 
 @Table (name="users")
 public class User {
@@ -60,6 +60,9 @@ public class User {
 	
 	@Column ( name = "first_name")
 	private String firstName;
+	
+	@Column ( name = "type")
+	private String type;
 	
 
 	@Column ( name = "last_name")

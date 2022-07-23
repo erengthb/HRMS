@@ -32,19 +32,22 @@ import lombok.NoArgsConstructor;
 
 @Entity
 @Data
-@EqualsAndHashCode(callSuper = false)
+
 @AllArgsConstructor
 @NoArgsConstructor
-@PrimaryKeyJoinColumn(name="id")
+
 @Table(name ="employers")
 
 
-public class Employer extends User   {
+public class Employer    {
 
 	
 	
-	
-	
+	@Id  // Tablodaki Id alanının nasıl oldugunu söylememiz gerekiyor
+	@GeneratedValue(strategy = GenerationType.IDENTITY)  //Tablodaki Id alanının otomatik olarak artacağını söyler
+	@Column ( name = "employer_id" )
+	private int id;
+	 
 	
 	@NotBlank
 	@Column(name= "company_name")
